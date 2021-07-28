@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+ body{
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.5;
+      background-color: #964B00
+      width: 500px;
+      margin: auto;
+ }
+
+ form{
+      background:   rgba(255, 0, 0, 0.5);
+      padding: 2.5rem 2.5rem;
+      border-radius: 2rem;
+      width: 500px;
+      margin: auto;
+
+ }
+
+ .submit-button{
+      width: 100%;
+      padding: 0.75rem;
+      background: blue;
+      color: white;
+      border-radius: 2px;
+      cursor: pointer;
+
+ }
+
+ .input-headings{
+      margin: 0 auto 1.25rem auto;
+      padding: 0.25rem;
+
+ }
+
+  .form-inputs{
+      display: block;
+      width: 90%;
+      height: 2rem;
+      padding: 0.25rem 0.75rem;
+      background-color: #fff;
+      border: 1px solid #964B00;
+      border-radius: 0.25rem;
+
+  }
+
+
+</style>
+
+<header>
+</header>
+<body>
+
+  <h1 id="title">Your knowledge on Blockchain and web3</h1>
+  <p id="description">We would like to asess the level of your knowledge on Blockchain technology and web3 </p>
+
+    <form id="survey-form">
+
+      <div class="input-headings">
+
+      <label for="name" id="name-label"> Name </label>
+      <input type="text" id="name" placeholder="Your Name" class="form-inputs" required> </input>
+      <br>
+
+      <label for="email" id="email-label"> Email </label>
+      <input type="email" id="email" placeholder="Your Email" class="form-inputs" required> </input>
+      <br>
+
+      <label for="number" id="number-label"> Age </label>
+      <input type="number" id="number" placeholder="18" min="18" max="100" class="form-inputs" required> </input>
+      <br>
+
+      <label for="dropdown" id="previous-knowledge"> What do you already know about Blockchain and web3 ?</label>
+      <select id="dropdown" class="form-inputs">
+
+        <option value="Bitcoin"> Know a few things about Bitcoin </option>
+        <option value="own-Bitcoin"> I have some Bitcoin </option>
+        <option value="Ethereum"> Know a few things about Ethereum </option>
+        <option value="Blockchain"> Have seen some other use cases of Blockchain </option>
+        <option value="smart-contract"> I hvae used and interacted with smart contracts </option>
+        <option value="Other projects"> I own the coins of other projects </option>
+      </select>
+        <br>
+        <br>
+
+      <label for="NFT_game"> About my NFT game (If I create an NFT sports game would you play?) </label>
+
+      <br>
+      <input type="radio" id="NFT-gmae" name="Play?" id="Definitely" value="Definitely">
+      <label for="NFT-game"> Definitely </label>
+
+      <br>
+      <input type="radio" id="NFT-gmae" name="Play?" id="Definitely" value="Maybe">
+      <label for="NFT-game"> Maybe </label>
+
+      <br>
+      <input type="radio" id="NFT-gmae" name="Play?" id="Definitely" value="Not_sure">
+      <label for="NFT-game"> Not sure </label>
+      <br>
+      <br>
+
+      <label for="game_features"> What type of features would you like to see in the NFT game? </label>
+      <br>
+      <input id="checkbox" type="checkbox" name="features" value="sports">
+      <label for="checkbox"> Sports Game (Football) </label>
+      <br>
+
+      <input id="checkbox" type="checkbox" name="features" value="Adventure">
+      <label for="checkbox"> Adventure Game (Tarzan) </label>
+      <br>
+
+      <input id="checkbox" type="checkbox" name="features" value="mission">
+      <label for="checkbox"> mission Game (City Guard) </label>
+      <br>
+      <br>
+
+      <label id="textarea"> Additional Comments </label>
+      <br>
+
+      <textarea id="textarea" name="instructions" rows="6" cols="40">
+
+      </textarea>
+      <br>
+
+
+      <input id="submit" type="submit" value="Place Order" class="submit-button">
+
+
+    </div>
+
+
+    </form>
+
+</body>
+</html>
